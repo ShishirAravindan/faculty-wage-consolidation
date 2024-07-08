@@ -7,16 +7,15 @@ def make_initial_state_file(file_path, json_out_path):
     """Get unique names from files [...]"""
     df = pd.read_excel(file_path)
     data = []
-    
-    for _, row in df.iterrows():
-        # Creates a dictionary for each person
+    unique_names = df['Name'].dropna().apply(lambda x: x.strip()).unique()
+    for name in unique_names:
+        year = df[df['Name'] == name].iloc[0]['Year']
         person = {
-            "name": f"{row['Name'].strip()}",
-            "year": f"{row['Year']}",  # Initialize as empty string
-            "faculty": None  # Initialize as None
+            "name": name,
+            "year": year,
+            "faculty": None
         }
         data.append(person)
-    
     with open(json_out_path, 'w') as json_file:
         json.dump(data, json_file, indent=2)
         print(f"JSON data has been written to {json_out_path}")
