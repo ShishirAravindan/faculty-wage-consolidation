@@ -62,7 +62,7 @@ def split_and_encode_image(image_path: str) -> list[str]:
     return encoded_parts
     
 
-def make_vLLM_API_call(prompt:str, image: str) -> Any[int, None]:
+def make_vLLM_API_call(prompt:str, image: str) -> int:
     """Make an API call to the vLLM server for image classification.
 
     Args:
@@ -91,7 +91,7 @@ def make_vLLM_API_call(prompt:str, image: str) -> Any[int, None]:
         return response.json()['response'].strip()
     else:
         logging.error(f"{response.status_code}, {response.text}")
-    return
+    return -1
 
 def process_images(prompt: str, images: list[str]):
     """
@@ -114,7 +114,6 @@ def process_images(prompt: str, images: list[str]):
 
         if classification == '0' or classification == '1':
             results.append(int(classification))
-            logging.info(f'Model\'s prediction: {classification}')
         else:
             logging.error(f'Model returned non-regular prediction: {classification}')
     return results
@@ -131,7 +130,6 @@ def main():
     images = split_and_encode_image(args.image_path)
     logging.info("Images split and encoded")
     preds = process_images(args.prompt, images)
-
     logging.info('Classification complete')
 
     print(preds)
