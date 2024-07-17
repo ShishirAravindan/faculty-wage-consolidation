@@ -31,6 +31,11 @@ def make_connection(URL, elementName):
     return driver
 
 def scrape_faculty_information_for_prof(name):
+    """
+    This function scrapes the department information for a given professor.
+    :param name: The name of the professor
+    :return: The department of the professor
+    """
     #trying the faculty one first
     try:
         driver = make_connection("https://iam.uiowa.edu/whitepages/search",None)
@@ -77,6 +82,10 @@ def scrape_faculty_information_for_prof(name):
 
 
 def scrape_faculty_information_for_chunk(chunk):
+    """
+    This function scrapes the department information for a chunk of professors. using threads
+
+    """
     with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
         results = [executor.submit(scrape_faculty_information_for_prof, person['name']) for person in chunk]
         for f in concurrent.futures.as_completed(results):
