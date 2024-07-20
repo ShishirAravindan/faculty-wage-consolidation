@@ -67,3 +67,16 @@
 2024-07-21 00:05:03 - root - INFO - FORM FILLED
 2024-07-21 00:10:24 - root - INFO - PAGE LOADING
 2024-07-21 00:10:46 - root - INFO - FORM FILLED
+2024-07-21 00:28:57 - root - INFO - PAGE LOADING
+2024-07-21 00:29:25 - root - INFO - FORM FILLED
+2024-07-21 00:31:57 - root - INFO - PAGE LOADING
+2024-07-21 00:32:30 - root - INFO - PAGE LOADING
+2024-07-21 00:32:44 - root - INFO - FORM FILLED
+2024-07-21 00:32:44 - root - ERROR - solve_captcha exception: Unable to locate element: /html/body/div/div/div[2]/div[1]/div[1]/div/strong; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+2024-07-21 00:32:44 - root - INFO - CAPTCHA reached
+2024-07-21 00:32:44 - root - INFO - PAGE LOADING
+2024-07-21 00:32:59 - root - INFO - FORM FILLED
+2024-07-21 00:42:04 - root - INFO - PAGE LOADING
+2024-07-21 00:42:13 - root - INFO - FORM FILLED
+2024-07-21 00:46:18 - root - INFO - PAGE LOADING
+2024-07-21 00:46:30 - root - INFO - FORM FILLED

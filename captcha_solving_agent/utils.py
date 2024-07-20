@@ -65,7 +65,6 @@ def fill_form(URL, name):
         time.sleep(_generate_random(0.5, 1.8))
         submit_button = driver.find_element(By.CSS_SELECTOR, 'button[type="submit"]')
         submit_button.click()
-        time.sleep(10)
     except TimeoutException as e:
         print("TimeoutException", e)
     except NoSuchElementException as e:
