@@ -27,7 +27,8 @@ def solve_captcha(driver: WebDriver):
     else:
         target_class, images = payload[0], payload[1]
         img_path = utils._download_image_locally(images)
-        decaptcha(target_class, img_path)
+        results = decaptcha(target_class, img_path)
+        click_images(driver, results)
 
 def identify_and_extract_captcha_form(driver: WebDriver):
     try:
@@ -79,6 +80,17 @@ def _get_images(driver):
     except TimeoutException as e:
         logging.error(f"[TimeoutException] Error Processing CAPTCHA form's images: {e}")
     return '', driver
+
+def click_images(driver: WebDriver, results: list[int]):
+    """Given the driver and the results (i.e. predictions from the vLLM) click
+    the corresponding tiles in the captcha form.
+
+    For easier testing just use a dummy list for results
+    eg: r = [0, 0, 0, 0, 1, 1, 1, 0, 1]
+    should click the middle, middle-right, bottom-left and bottom-right
+    then should hit the verify button
+    """
+    pass
 
 #--------------------------------------------------------------------------------
 # Test code
