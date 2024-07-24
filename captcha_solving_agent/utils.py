@@ -12,6 +12,9 @@ from bs4 import BeautifulSoup
 import json
 import time
 import concurrent.futures
+import requests
+from PIL import Image
+from io import BytesIO
 
 def assert_equal(tc_name: str, arr1: list[bool], arr2: list[bool]):
     if _is_equal(arr1, arr2): return
@@ -24,6 +27,12 @@ def _is_equal(arr1: list[bool], arr2: list[bool]) -> bool:
         if arr2[i] is not None and arr1[i] != arr2[i]: return False
     return True
 
+def _download_image_locally(url) -> str:
+    response = requests.get(url)
+    if response.status_code == 200:
+        image = Image.open(BytesIO(response.content))
+        image.save("temp/captcha.jpg")
+    return "temp/captcha.jpg"
 
 
 def _generate_random(x, y):
