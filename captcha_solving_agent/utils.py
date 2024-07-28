@@ -1,6 +1,7 @@
-#!../../../.finPayVenv/bin/python3
+#!python3
 
 from selenium import webdriver
+from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.firefox.service import Service
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.by import By
@@ -20,7 +21,6 @@ def assert_equal(tc_name: str, arr1: list[bool], arr2: list[bool]):
     if _is_equal(arr1, arr2): return
     print (f"assert_equal failed: {tc_name}, {arr1}, {arr2}")
 
-
 def _is_equal(arr1: list[bool], arr2: list[bool]) -> bool:
     if len(arr1) != len(arr2): return False
     for i in range(len(arr1)):
@@ -34,10 +34,8 @@ def _download_image_locally(url) -> str:
         image.save("temp/captcha.jpg")
     return "temp/captcha.jpg"
 
-
 def _generate_random(x, y):
     return random.uniform(x, y)
-
 
 def _setup_driver(isHeadless: False):
     firefox_options = Options()
@@ -79,6 +77,17 @@ def fill_form(URL, name):
     except NoSuchElementException as e:
         print("NoSuchElementException", e)
     return driver
+
+def get_faculty_for_prof(driver: WebDriver):
+    try:
+        table_element = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, ""))
+        )
+    except Exception as e:
+        print(f"Error: Could not find table elements. {e}")
+
+def re_fill_form(driver: WebDriver, name: str):
+    pass
 
 def scrape_faculty_information_for_prof(name):
     """
@@ -140,18 +149,6 @@ def scrape_faculty_information_for_chunk(chunk):
         for f in concurrent.futures.as_completed(results):
             print(f.result())
 
-
-
-
-def identify_captcha_check(driver):
-    try:
-        captcha_element = driver.find_element(By.ID, "captcha")
-        return True
-    except:
-        return False
-
-def passing_captcha_logic():
-    pass
 
 if __name__ == "__main__":
     scrape_faculty_information_for_chunk([

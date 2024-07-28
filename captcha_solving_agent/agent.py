@@ -101,9 +101,9 @@ def _click_images(driver: WebDriver, preds: list[int]) -> WebDriver:
         for i, pred in enumerate(preds):
             if pred == True: image_elements[i].click()
     except NoSuchElementException as e:
-        print(f"Error: Could not find image elements with selector '{config['image_grid']}'. {e}")
+        logging.error(f"Error: Could not find image elements with selector '{config['image_grid']}'. {e}")
     except Exception as e:
-        print(f"Error: Could not click the image elements. {e}")
+        logging.error(f"Error: Could not click the image elements. {e}")
     return driver
 
 def _complete_form(driver: WebDriver) -> WebDriver:
