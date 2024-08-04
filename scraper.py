@@ -50,24 +50,23 @@ def scrape_faculty_information_for_prof(name):
         #Captcha check
         if identify_captcha_check(driver):
             print("Captcha Check")
-            #passing_captcha_logic()
+            # passing_captcha_logic()
             return
-        html = driver.page_source
-        # html =response.text
-        soup = BeautifulSoup(html, 'html.parser')
-        table = soup.find('table', class_='table search-result-table')
-        if table is not None:
-            tr_tags = table.find_all('tr')
+
+        try:
+            table = WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.CLASS_NAME, 'table.search-result-table'))
+            )
+            tr_tags = table.find_elements(By.TAG_NAME, 'tr')
             if len(tr_tags) > 7:
-                # print(tr_tags)
                 dept = tr_tags[7].text.strip('\n').split('\n')[4].strip()
-                # dept = tr_tags[7].text.split('\n')[0]
                 print(name, ' ', dept)
                 return dept
             else:
                 print("Not enough rows in the table.")
-        else:
-            print("Table not Found")
+        except Exception as e:
+            print("Table not Found or other error:", e)
+
         driver.quit()
 
     except TimeoutException as e:
