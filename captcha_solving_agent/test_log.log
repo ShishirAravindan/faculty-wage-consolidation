@@ -80,3 +80,620 @@
 2024-07-21 00:42:13 - root - INFO - FORM FILLED
 2024-07-21 00:46:18 - root - INFO - PAGE LOADING
 2024-07-21 00:46:30 - root - INFO - FORM FILLED
+2024-08-04 22:26:32 - root - INFO - PAGE LOADING
+2024-08-04 22:26:41 - root - INFO - PAGE LOADING
+2024-08-04 22:26:46 - root - INFO - PAGE LOADING
+2024-08-04 22:30:24 - root - INFO - PAGE LOADING
+2024-08-04 22:32:10 - root - INFO - PAGE LOADING
+2024-08-04 22:34:54 - root - INFO - PAGE LOADING
+2024-08-04 22:35:08 - root - INFO - FORM FILLED
+2024-08-04 22:35:08 - root - INFO - CAPTCHA iFrame identified. Extracting info ...
+2024-08-04 22:35:08 - root - INFO - CAPTCHA target: bicycles
+2024-08-04 22:35:08 - root - INFO - CAPTCHA image source: https://www.google.com/recaptcha/api2/payload?p=06AFcWeA5_SWTazVUB0TMmmEQzirZfXom_38oQte9WzzIt4wW36n5I7ruI9BXL6kNYLmVt6mQ5K25D_xDTkz6-KHm9N8l5F12r3aNCfk8VaXOPOm3hrUlDSN2zmjupZLbEPTeSvkI6kjscXYH-LZ1oWuD-IuwjRFTd4FfddqQeMshF2o2pAK8HTktgY2ldrDK3LlTbYQXpSHOoHo124qShHRj7e93xD_r2LA&k=6Lc-h1MUAAAAAMDEswtWjZq0byFXN4McoBPjOqAT
+2024-08-04 22:35:09 - root - INFO - Enter decaptcha: bicycles, temp/captcha.jpg
+2024-08-04 22:35:09 - root - DEBUG - Images split and encoded: bicycles, temp/captcha.jpg
+2024-08-04 22:35:21 - root - DEBUG - _make_vLLM_API_call success: bicycles, 0
+2024-08-04 22:35:26 - root - DEBUG - _make_vLLM_API_call success: bicycles, 0
+2024-08-04 22:35:32 - root - DEBUG - _make_vLLM_API_call success: bicycles, 1
+2024-08-04 22:35:38 - root - DEBUG - _make_vLLM_API_call success: bicycles, 0
+2024-08-04 22:35:43 - root - DEBUG - _make_vLLM_API_call success: bicycles, 1
+2024-08-04 22:35:49 - root - DEBUG - _make_vLLM_API_call success: bicycles, 0
+2024-08-04 22:35:54 - root - DEBUG - _make_vLLM_API_call success: bicycles, 1
+2024-08-04 22:36:00 - root - DEBUG - _make_vLLM_API_call success: bicycles, 1
+2024-08-04 22:36:06 - root - DEBUG - _make_vLLM_API_call success: bicycles, 1
+2024-08-04 22:36:06 - root - INFO - Exit decaptcha: bicycles, temp/captcha.jpg, [False, False, True, False, True, False, True, True, True]
+2024-08-04 22:36:07 - root - INFO - CAPTCHA COMPLETED
+2024-08-04 22:36:09 - root - INFO - department: None
+2024-08-04 22:36:58 - root - INFO - PAGE LOADING
+2024-08-04 22:37:07 - root - INFO - FORM FILLED
+2024-08-04 22:37:08 - root - INFO - CAPTCHA iFrame identified. Extracting info ...
+2024-08-04 22:37:08 - root - INFO - CAPTCHA target: cars
+2024-08-04 22:37:08 - root - INFO - CAPTCHA image source: https://www.google.com/recaptcha/api2/payload?p=06AFcWeA7jK5M9TyTQ_vbip0mrCZrOGKN-H2KQXL7kcPhlHE7Ofve00Hyz329NKR4BOVI8snntb0Yd0WGEe_qjcjOkvhfXsQOJ-wxTS6LN4_1wFmvvBo05yiIT66pfMgcpj3QwOg49m3vZzsuQCAUcO75jbXaq7RPwdKFv0nukYHxhnFTobxMeXLpGJgnWMLh4BUKVrqf25ziGcC5hJ-eUrA1xWILNWBekdw&k=6Lc-h1MUAAAAAMDEswtWjZq0byFXN4McoBPjOqAT
+2024-08-04 22:37:08 - root - INFO - Enter decaptcha: cars, temp/captcha.jpg
+2024-08-04 22:37:08 - root - DEBUG - Images split and encoded: cars, temp/captcha.jpg
+2024-08-04 22:37:16 - root - DEBUG - _make_vLLM_API_call success: cars, 0
+2024-08-04 22:37:21 - root - DEBUG - _make_vLLM_API_call success: cars, 0
+2024-08-04 22:37:40 - root - INFO - PAGE LOADING
+2024-08-04 22:37:51 - root - INFO - FORM FILLED
+2024-08-04 22:37:51 - root - INFO - CAPTCHA iFrame identified. Extracting info ...
+2024-08-04 22:37:51 - root - INFO - CAPTCHA target: motorcycles
+2024-08-04 22:37:51 - root - INFO - CAPTCHA image source: https://www.google.com/recaptcha/api2/payload?p=06AFcWeA5SNtonbz6sbJpiZ5UFZnKMPCtOIHmKNILKjw2yPCVNEmGMRLHIHJ9S-4NBjGMI5QGVWGpER0riuyyleimtxFPTITj88EHC4i1Tx3cN4nSOCrTCfPkpGLTnlrhaa2CoVkpA8R7gNsUatKA9iKeiqCY7srXvKbqqJ787oaatG6RrhQ6sSoBwjh-BvADpLlOMW5s465PO&k=6Lc-h1MUAAAAAMDEswtWjZq0byFXN4McoBPjOqAT
+2024-08-04 22:37:51 - root - INFO - Enter decaptcha: motorcycles, temp/captcha.jpg
+2024-08-04 22:37:51 - root - DEBUG - Images split and encoded: motorcycles, temp/captcha.jpg
+2024-08-04 22:43:45 - root - INFO - PAGE LOADING
+2024-08-04 22:43:47 - root - INFO - FORM FILLED
+2024-08-04 22:46:20 - root - INFO - PAGE LOADING
+2024-08-04 22:46:26 - root - INFO - FORM FILLED
+2024-08-04 22:49:39 - root - INFO - PAGE LOADING
+2024-08-04 22:49:44 - root - INFO - FORM FILLED
+2024-08-04 22:49:44 - root - INFO - CAPTCHA iFrame identified. Extracting info ...
+2024-08-04 22:49:44 - root - INFO - CAPTCHA target: bicycles
+2024-08-04 22:49:44 - root - INFO - CAPTCHA image source: https://www.google.com/recaptcha/api2/payload?p=06AFcWeA4Q4b_xI7PmAVIG1jl923V5D7Av9qRJf4PGQRKkLnj1s0iaXyOeQdzSie1PJz0bm0-hjCvaovN0xoaEXK7neRIbU6DxhhAJl9AVf47hj6cyMPqa2mwOdttV-UMeTvNLCigeuFzM_HpR5zJwLOCkttOo2NWqS7GjszUhkCI85TePSMvdoCsh_2T75tt1RSfmWr_oSuoH&k=6Lc-h1MUAAAAAMDEswtWjZq0byFXN4McoBPjOqAT
+2024-08-04 22:49:45 - root - INFO - Enter decaptcha: bicycles, temp/captcha.jpg
+2024-08-04 22:49:45 - root - DEBUG - Images split and encoded: bicycles, temp/captcha.jpg
+2024-08-04 22:49:57 - root - DEBUG - _make_vLLM_API_call success: bicycles, 1
+2024-08-04 22:50:03 - root - DEBUG - _make_vLLM_API_call success: bicycles, 1
+2024-08-04 22:50:08 - root - DEBUG - _make_vLLM_API_call success: bicycles, 0
+2024-08-04 22:50:14 - root - DEBUG - _make_vLLM_API_call success: bicycles, 0
+2024-08-04 22:50:20 - root - DEBUG - _make_vLLM_API_call success: bicycles, 0
+2024-08-04 22:50:25 - root - DEBUG - _make_vLLM_API_call success: bicycles, 1
+2024-08-04 22:50:31 - root - DEBUG - _make_vLLM_API_call success: bicycles, 1
+2024-08-04 22:50:36 - root - DEBUG - _make_vLLM_API_call success: bicycles, 0
+2024-08-04 22:50:42 - root - DEBUG - _make_vLLM_API_call success: bicycles, 0
+2024-08-04 22:50:42 - root - INFO - Exit decaptcha: bicycles, temp/captcha.jpg, [True, True, False, False, False, True, True, False, False]
+2024-08-04 22:50:43 - root - INFO - CAPTCHA COMPLETED
+2024-08-04 22:50:55 - root - INFO - department: None
+2024-08-04 22:52:34 - root - INFO - PAGE LOADING
+2024-08-04 22:52:38 - root - INFO - FORM FILLED
+2024-08-04 22:52:41 - root - INFO - department: None
+2024-08-04 22:55:19 - root - INFO - PAGE LOADING
+2024-08-04 22:55:22 - root - INFO - FORM FILLED
+2024-08-04 22:55:23 - root - INFO - CAPTCHA iFrame identified. Extracting info ...
+2024-08-04 22:55:23 - root - INFO - CAPTCHA target: buses
+2024-08-04 22:55:33 - root - ERROR - [TimeoutException] Error Processing CAPTCHA form's images: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:511:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2024-08-04 22:57:55 - root - INFO - PAGE LOADING
+2024-08-04 22:58:00 - root - INFO - FORM FILLED
+2024-08-04 22:58:04 - root - INFO - department: None
+2024-08-04 22:59:19 - root - INFO - PAGE LOADING
+2024-08-04 22:59:21 - root - INFO - FORM FILLED
+2024-08-04 22:59:22 - root - INFO - CAPTCHA iFrame identified. Extracting info ...
+2024-08-04 22:59:22 - root - INFO - CAPTCHA target: bicycles
+2024-08-04 22:59:22 - root - INFO - CAPTCHA image source: https://www.google.com/recaptcha/api2/payload?p=06AFcWeA6KaMf8tbXltFMi4u08NYdopzkzrnPdiNJzDKffF66o0qc3H2s0a9pbP7bWMsTaKywGaafFnxsFn57K5mAfZWF7EqoK-GQOExmEgMTqmX1rjevP4-wSa6Ptgo6wydowCR60rVKp0y3n97lyrbYqgZC8lNT4GtJB6LNWXRS5kTjtqZjgTmrUYkcQrbq3cZUYk05Xqduq&k=6Lc-h1MUAAAAAMDEswtWjZq0byFXN4McoBPjOqAT
+2024-08-04 22:59:22 - root - INFO - Enter decaptcha: bicycles, temp/captcha.jpg
+2024-08-04 22:59:22 - root - DEBUG - Images split and encoded: bicycles, temp/captcha.jpg
+2024-08-04 22:59:32 - root - DEBUG - _make_vLLM_API_call success: bicycles, 0
+2024-08-04 22:59:37 - root - DEBUG - _make_vLLM_API_call success: bicycles, 1
+2024-08-04 22:59:43 - root - DEBUG - _make_vLLM_API_call success: bicycles, 0
+2024-08-04 22:59:48 - root - DEBUG - _make_vLLM_API_call success: bicycles, 1
+2024-08-04 22:59:54 - root - DEBUG - _make_vLLM_API_call success: bicycles, 1
+2024-08-04 22:59:59 - root - DEBUG - _make_vLLM_API_call success: bicycles, 0
+2024-08-04 23:00:05 - root - DEBUG - _make_vLLM_API_call success: bicycles, 1
+2024-08-04 23:00:10 - root - DEBUG - _make_vLLM_API_call success: bicycles, 0
+2024-08-04 23:00:16 - root - DEBUG - _make_vLLM_API_call success: bicycles, 0
+2024-08-04 23:00:16 - root - INFO - Exit decaptcha: bicycles, temp/captcha.jpg, [False, True, False, True, True, False, True, False, False]
+2024-08-04 23:00:17 - root - INFO - CAPTCHA COMPLETED
+2024-08-04 23:00:19 - root - INFO - Name A'Hearn, Amy K
+2024-08-04 23:00:19 - root - INFO - Send E-Mail To amy-ahearn@uiowa.edu
+2024-08-04 23:00:19 - root - INFO - E-Mail Routing Address afagerbe@iowa.uiowa.edu
+2024-08-04 23:00:19 - root - INFO - HawkID afagerbe
+2024-08-04 23:00:19 - root - INFO - Working Title Recruitment Specialist, CCOM
+2024-08-04 23:00:19 - root - INFO - University Classification Adm & Enroll Svcs Manager
+2024-08-04 23:00:19 - root - INFO - Job Code PCD3
+2024-08-04 23:00:19 - root - INFO - Office Phone (319) 335-8057
+2024-08-04 23:00:19 - root - INFO - Campus Mail Address
+STUDENT AFFAIRS
+1187 MERF
+2024-08-04 23:00:19 - root - INFO - Person Type Faculty/Staff
+2024-08-04 23:00:19 - root - INFO - department: None
+2024-08-04 23:03:51 - root - INFO - PAGE LOADING
+2024-08-04 23:03:55 - root - INFO - FORM FILLED
+2024-08-04 23:03:55 - root - INFO - CAPTCHA iFrame identified. Extracting info ...
+2024-08-04 23:03:55 - root - INFO - CAPTCHA target: traffic lights
+2024-08-04 23:03:55 - root - INFO - CAPTCHA image source: https://www.google.com/recaptcha/api2/payload?p=06AFcWeA7pSHIzHiB2ohFI6WeMCvrFh2oHp1045Z9KH_NJ0MDBZtd_s-i75OcoaVMxczVRCsaasJP47z9X1REY91FoYxLIv82T5BMIVtjmRoT-puytN-bBg76G5oazBiHDIjkpkj0mEgGTtvwav-b5kme0rohM__rA9f7JMVPfarbNLA_iMugGk2HknJ090OCc4konMaXOXI17XdlUq87Gj0wAh5J4TAXyZw&k=6Lc-h1MUAAAAAMDEswtWjZq0byFXN4McoBPjOqAT
+2024-08-04 23:03:56 - root - INFO - Enter decaptcha: traffic lights, temp/captcha.jpg
+2024-08-04 23:03:56 - root - DEBUG - Images split and encoded: traffic lights, temp/captcha.jpg
+2024-08-04 23:04:05 - root - DEBUG - _make_vLLM_API_call success: traffic lights, 1
+2024-08-04 23:04:11 - root - DEBUG - _make_vLLM_API_call success: traffic lights, 1
+2024-08-04 23:04:17 - root - DEBUG - _make_vLLM_API_call success: traffic lights, 0
+2024-08-04 23:04:22 - root - DEBUG - _make_vLLM_API_call success: traffic lights, 0
+2024-08-04 23:04:28 - root - DEBUG - _make_vLLM_API_call success: traffic lights, 0
+2024-08-04 23:04:33 - root - DEBUG - _make_vLLM_API_call success: traffic lights, 0
+2024-08-04 23:04:39 - root - DEBUG - _make_vLLM_API_call success: traffic lights, 0
+2024-08-04 23:04:44 - root - DEBUG - _make_vLLM_API_call success: traffic lights, 0
+2024-08-04 23:04:50 - root - DEBUG - _make_vLLM_API_call success: traffic lights, 1
+2024-08-04 23:04:50 - root - INFO - Exit decaptcha: traffic lights, temp/captcha.jpg, [True, True, False, False, False, False, False, False, True]
+2024-08-04 23:04:51 - root - INFO - CAPTCHA COMPLETED
+2024-08-04 23:04:54 - root - INFO - Name A'Hearn, Amy K
+2024-08-04 23:04:54 - root - INFO - Send E-Mail To amy-ahearn@uiowa.edu
+2024-08-04 23:04:54 - root - INFO - E-Mail Routing Address afagerbe@iowa.uiowa.edu
+2024-08-04 23:04:54 - root - INFO - HawkID afagerbe
+2024-08-04 23:04:54 - root - INFO - Working Title Recruitment Specialist, CCOM
+2024-08-04 23:04:54 - root - INFO - University Classification Adm & Enroll Svcs Manager
+2024-08-04 23:04:54 - root - INFO - Job Code PCD3
+2024-08-04 23:04:54 - root - INFO - Office Phone (319) 335-8057
+2024-08-04 23:04:54 - root - INFO - Campus Mail Address
+STUDENT AFFAIRS
+1187 MERF
+2024-08-04 23:04:54 - root - INFO - Person Type Faculty/Staff
+2024-08-04 23:04:54 - root - INFO - Campus Mail Address
+STUDENT AFFAIRS
+1187 MERF
+2024-08-04 23:04:54 - root - INFO - department: None
+2024-08-04 23:08:07 - root - INFO - PAGE LOADING
+2024-08-04 23:08:13 - root - INFO - FORM FILLED
+2024-08-04 23:08:16 - root - INFO - Name A'Hearn, Amy K
+2024-08-04 23:08:16 - root - INFO - Send E-Mail To amy-ahearn@uiowa.edu
+2024-08-04 23:08:16 - root - INFO - E-Mail Routing Address afagerbe@iowa.uiowa.edu
+2024-08-04 23:08:16 - root - INFO - HawkID afagerbe
+2024-08-04 23:08:16 - root - INFO - Working Title Recruitment Specialist, CCOM
+2024-08-04 23:08:16 - root - INFO - University Classification Adm & Enroll Svcs Manager
+2024-08-04 23:08:16 - root - INFO - Job Code PCD3
+2024-08-04 23:08:16 - root - INFO - Office Phone (319) 335-8057
+2024-08-04 23:08:16 - root - INFO - Campus Mail Address
+STUDENT AFFAIRS
+1187 MERF
+2024-08-04 23:08:16 - root - INFO - Person Type Faculty/Staff
+2024-08-04 23:08:16 - root - INFO - STUDENT AFFAIRS
+2024-08-04 23:08:16 - root - INFO - department: STUDENT AFFAIRS
+2024-08-04 23:11:10 - root - INFO - PAGE LOADING
+2024-08-04 23:11:17 - root - INFO - FORM FILLED
+2024-08-04 23:11:31 - root - INFO - department: None
+2024-08-04 23:11:35 - root - INFO - FORM FILLED
+2024-08-04 23:11:49 - root - INFO - department: None
+2024-08-04 23:11:52 - root - INFO - FORM FILLED
+2024-08-04 23:12:05 - root - INFO - department: None
+2024-08-04 23:15:32 - root - INFO - PAGE LOADING
+2024-08-04 23:15:32 - root - INFO - 
+GETTING FACULTY INFORMATION
+
+2024-08-04 23:15:37 - root - INFO - 
+FORM FILLED with {name}
+2024-08-04 23:15:38 - root - INFO - CAPTCHA iFrame identified. Extracting info ...
+2024-08-04 23:15:38 - root - INFO - CAPTCHA target: traffic lights
+2024-08-04 23:15:48 - root - ERROR - [TimeoutException] Error Processing CAPTCHA form's images: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:511:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2024-08-04 23:16:18 - root - INFO - PAGE LOADING
+2024-08-04 23:16:18 - root - INFO - 
+GETTING FACULTY INFORMATION
+
+2024-08-04 23:16:23 - root - INFO - 
+FORM FILLED with A-WAN,IRUND I
+2024-08-04 23:16:37 - root - ERROR - Table not Found or other error: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:511:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2024-08-04 23:16:37 - root - INFO - FACULTY DEPT for A-WAN,IRUND I: None
+2024-08-04 23:16:37 - root - INFO - 
+GETTING FACULTY INFORMATION
+
+2024-08-04 23:16:43 - root - INFO - 
+FORM FILLED with AABERG DULANE T
+2024-08-04 23:16:58 - root - ERROR - Table not Found or other error: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:511:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2024-08-04 23:16:58 - root - INFO - FACULTY DEPT for AABERG DULANE T: None
+2024-08-04 23:16:58 - root - INFO - 
+GETTING FACULTY INFORMATION
+
+2024-08-04 23:17:03 - root - INFO - 
+FORM FILLED with AAGESEN DAVID
+2024-08-04 23:17:03 - root - INFO - CAPTCHA iFrame identified. Extracting info ...
+2024-08-04 23:17:03 - root - INFO - CAPTCHA target: bridges
+2024-08-04 23:17:03 - root - INFO - CAPTCHA image source: https://www.google.com/recaptcha/api2/payload?p=06AFcWeA7Ywid6sxD6jCN3HV9LcH56jJNYOwquPlNpfB1lKY57frXkivuGhd5V0_sjW-Fdc7IPjFGHYvjfu19N8g5Wk0WvqGdwj9u-8cFH-yH5eoX1yvPqFfDVanVWepLSbahkMRjtoAO8vLK4ygGNBC-UhQpl36Uj6hEEyFMXp2lBEOoevEPRIqeH6ea_B3inToF5KoGLvbWoN5L0YK8198jPuew2m6puOg&k=6Lc-h1MUAAAAAMDEswtWjZq0byFXN4McoBPjOqAT
+2024-08-04 23:17:04 - root - INFO - Enter decaptcha: bridges, temp/captcha.jpg
+2024-08-04 23:17:04 - root - DEBUG - Images split and encoded: bridges, temp/captcha.jpg
+2024-08-04 23:17:14 - root - DEBUG - _make_vLLM_API_call success: bridges, 0
+2024-08-04 23:17:20 - root - DEBUG - _make_vLLM_API_call success: bridges, 1
+2024-08-04 23:17:25 - root - DEBUG - _make_vLLM_API_call success: bridges, 0
+2024-08-04 23:17:31 - root - DEBUG - _make_vLLM_API_call success: bridges, 1
+2024-08-04 23:17:36 - root - DEBUG - _make_vLLM_API_call success: bridges, 0
+2024-08-04 23:17:42 - root - DEBUG - _make_vLLM_API_call success: bridges, 1
+2024-08-04 23:17:47 - root - DEBUG - _make_vLLM_API_call success: bridges, 1
+2024-08-04 23:17:53 - root - DEBUG - _make_vLLM_API_call success: bridges, 1
+2024-08-04 23:17:59 - root - DEBUG - _make_vLLM_API_call success: bridges, 0
+2024-08-04 23:17:59 - root - INFO - Exit decaptcha: bridges, temp/captcha.jpg, [False, True, False, True, False, True, True, True, False]
+2024-08-04 23:18:00 - root - INFO - CAPTCHA COMPLETED
+2024-08-04 23:20:21 - root - INFO - PAGE LOADING
+2024-08-04 23:20:21 - root - INFO - 
+GETTING FACULTY INFORMATION
+
+2024-08-04 23:20:28 - root - INFO - 
+FORM FILLED with A-WAN,IRUND I
+2024-08-04 23:20:43 - root - ERROR - Table not Found or other error: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:511:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2024-08-04 23:20:43 - root - INFO - FACULTY DEPT for A-WAN,IRUND I: No department found
+2024-08-04 23:20:43 - root - INFO - 
+GETTING FACULTY INFORMATION
+
+2024-08-04 23:20:46 - root - INFO - 
+FORM FILLED with AABERG DULANE T
+2024-08-04 23:20:47 - root - INFO - CAPTCHA iFrame identified. Extracting info ...
+2024-08-04 23:20:47 - root - INFO - CAPTCHA target: stairs
+2024-08-04 23:20:57 - root - ERROR - [TimeoutException] Error Processing CAPTCHA form's images: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:511:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2024-08-04 23:21:21 - root - INFO - PAGE LOADING
+2024-08-04 23:21:21 - root - INFO - ---------GETTING FACULTY INFORMATION---------
+2024-08-04 23:21:26 - root - INFO - 
+FORM FILLED with A-WAN,IRUND I
+2024-08-04 23:21:27 - root - INFO - CAPTCHA iFrame identified. Extracting info ...
+2024-08-04 23:21:27 - root - INFO - CAPTCHA target: traffic lights
+2024-08-04 23:21:37 - root - ERROR - [TimeoutException] Error Processing CAPTCHA form's images: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:511:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2024-08-04 23:24:38 - root - INFO - PAGE LOADING
+2024-08-04 23:24:38 - root - INFO - ---------GETTING FACULTY INFORMATION---------
+2024-08-04 23:24:41 - root - INFO - 
+FORM FILLED with A-WAN,IRUND I
+2024-08-04 23:24:43 - root - INFO - CAPTCHA iFrame identified. Extracting info ...
+2024-08-04 23:24:43 - root - INFO - CAPTCHA target: bicycles
+2024-08-04 23:24:43 - root - INFO - CAPTCHA image source: https://www.google.com/recaptcha/api2/payload?p=06AFcWeA5QHoCsUDzs-rkm8v-H3j3s835KZ40idUvGEZmF7CwYnNohK0plSnF5qagfcrTzefNXLI0ua5KxLOqB7NdWu0uCIGu18pmV__qSJH_n62nEv-bnZt0hUxEPTRmqtukNGkKldoHHy5VXopYcmw1CByD1blHLCVddOQ4qL6g4e-M4eJEQXIiXnCDZomXP4R1nazY8SMMd&k=6Lc-h1MUAAAAAMDEswtWjZq0byFXN4McoBPjOqAT
+2024-08-04 23:24:43 - root - INFO - Enter decaptcha: bicycles, temp/captcha.jpg
+2024-08-04 23:24:43 - root - DEBUG - Images split and encoded: bicycles, temp/captcha.jpg
+2024-08-04 23:24:52 - root - DEBUG - _make_vLLM_API_call success: bicycles, 0
+2024-08-04 23:24:58 - root - DEBUG - _make_vLLM_API_call success: bicycles, 0
+2024-08-04 23:25:03 - root - DEBUG - _make_vLLM_API_call success: bicycles, 1
+2024-08-04 23:25:09 - root - DEBUG - _make_vLLM_API_call success: bicycles, 1
+2024-08-04 23:25:14 - root - DEBUG - _make_vLLM_API_call success: bicycles, 0
+2024-08-04 23:25:20 - root - DEBUG - _make_vLLM_API_call success: bicycles, 0
+2024-08-04 23:25:25 - root - DEBUG - _make_vLLM_API_call success: bicycles, 1
+2024-08-04 23:25:31 - root - DEBUG - _make_vLLM_API_call success: bicycles, 0
+2024-08-04 23:25:36 - root - DEBUG - _make_vLLM_API_call success: bicycles, 0
+2024-08-04 23:25:36 - root - INFO - Exit decaptcha: bicycles, temp/captcha.jpg, [False, False, True, True, False, False, True, False, False]
+2024-08-04 23:25:37 - root - INFO - CAPTCHA COMPLETED
+2024-08-04 23:25:49 - root - ERROR - Table not Found or other error: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:511:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2024-08-04 23:25:49 - root - INFO - FACULTY DEPT for A-WAN,IRUND I: No department found
+2024-08-04 23:25:49 - root - INFO - ---------GETTING FACULTY INFORMATION---------
+2024-08-04 23:25:52 - root - INFO - 
+FORM FILLED with AABERG DULANE T
+2024-08-04 23:25:54 - root - INFO - CAPTCHA iFrame identified. Extracting info ...
+2024-08-04 23:25:54 - root - INFO - CAPTCHA target: bus
+2024-08-04 23:25:54 - root - INFO - CAPTCHA image source: https://www.google.com/recaptcha/api2/payload?p=06AFcWeA5x1rhUqhiyzYZABE0qRJHZtM68YgZEa3kltGO22nxws0eIkR2AiQCKy3hoCPcAj42zMgufwVJY3vqqekkPPKwbPkz-XlqADKce0poK0VWTw-qgriYIqpFr5tT7b0vnoF2zrVLeS_-dikYYMmY0haG9R7dg1fY1x9dXPEJf3fK3xF3k1rxH4PR3J6kEs6FXUgJVY0BPoW3dNMAzDpWX99ZhshqzKg&k=6Lc-h1MUAAAAAMDEswtWjZq0byFXN4McoBPjOqAT
+2024-08-04 23:25:54 - root - INFO - Enter decaptcha: bus, temp/captcha.jpg
+2024-08-04 23:25:54 - root - DEBUG - Images split and encoded: bus, temp/captcha.jpg
+2024-08-04 23:26:00 - root - DEBUG - _make_vLLM_API_call success: bus, 1
+2024-08-04 23:26:06 - root - DEBUG - _make_vLLM_API_call success: bus, 1
+2024-08-04 23:26:11 - root - DEBUG - _make_vLLM_API_call success: bus, 0
+2024-08-04 23:26:17 - root - DEBUG - _make_vLLM_API_call success: bus, 0
+2024-08-04 23:26:22 - root - DEBUG - _make_vLLM_API_call success: bus, 0
+2024-08-04 23:26:28 - root - DEBUG - _make_vLLM_API_call success: bus, 1
+2024-08-04 23:26:33 - root - DEBUG - _make_vLLM_API_call success: bus, 1
+2024-08-04 23:26:39 - root - DEBUG - _make_vLLM_API_call success: bus, 0
+2024-08-04 23:26:45 - root - DEBUG - _make_vLLM_API_call success: bus, 0
+2024-08-04 23:26:45 - root - INFO - Exit decaptcha: bus, temp/captcha.jpg, [True, True, False, False, False, True, True, False, False]
+2024-08-04 23:26:46 - root - INFO - CAPTCHA COMPLETED
+2024-08-04 23:26:59 - root - ERROR - Table not Found or other error: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:511:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2024-08-04 23:26:59 - root - INFO - FACULTY DEPT for AABERG DULANE T: No department found
+2024-08-04 23:26:59 - root - INFO - ---------GETTING FACULTY INFORMATION---------
+2024-08-04 23:27:03 - root - INFO - 
+FORM FILLED with AAGESEN DAVID
+2024-08-04 23:27:17 - root - ERROR - Table not Found or other error: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:511:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2024-08-04 23:27:17 - root - INFO - FACULTY DEPT for AAGESEN DAVID: No department found
+2024-08-04 23:27:17 - root - INFO - ---------GETTING FACULTY INFORMATION---------
+2024-08-04 23:27:23 - root - INFO - 
+FORM FILLED with AALBERS KIMBERLEY K
+2024-08-04 23:27:36 - root - ERROR - Table not Found or other error: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:511:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2024-08-04 23:27:36 - root - INFO - FACULTY DEPT for AALBERS KIMBERLEY K: No department found
+2024-08-04 23:27:36 - root - INFO - ---------GETTING FACULTY INFORMATION---------
+2024-08-04 23:32:49 - root - INFO - PAGE LOADING
+2024-08-04 23:32:49 - root - INFO - ---------GETTING FACULTY INFORMATION---------
+2024-08-04 23:32:53 - root - INFO - 
+FORM FILLED with A-WAN,IRUND I
+2024-08-04 23:32:54 - root - INFO - CAPTCHA iFrame identified. Extracting info ...
+2024-08-04 23:32:54 - root - INFO - CAPTCHA target: stairs
+2024-08-04 23:32:54 - root - INFO - CAPTCHA image source: https://www.google.com/recaptcha/api2/payload?p=06AFcWeA7iyo9miLlVmipRnUpGRkDLn3p93sGQImqndIZda3SsFLnMhQjo-BTIACkPMyw2TtMexaL7KwBt706xTAGvJ7H7XLCypAQ_tZm9e4MV8jOnqdXsWaKnbwY1Ixa5kYRIrbtU3pB-_XAZs5ZG34YreMNzKtx9JuW8k_h7nUPL1mdPMJ7JwnjUP4XVHFBYbFJxXAblMDCw&k=6Lc-h1MUAAAAAMDEswtWjZq0byFXN4McoBPjOqAT
+2024-08-04 23:32:54 - root - INFO - Enter decaptcha: stairs, temp/captcha.jpg
+2024-08-04 23:32:54 - root - DEBUG - Images split and encoded: stairs, temp/captcha.jpg
+2024-08-04 23:33:07 - root - DEBUG - _make_vLLM_API_call success: stairs, 0
+2024-08-04 23:33:12 - root - DEBUG - _make_vLLM_API_call success: stairs, 0
+2024-08-04 23:33:18 - root - DEBUG - _make_vLLM_API_call success: stairs, 0
+2024-08-04 23:33:23 - root - DEBUG - _make_vLLM_API_call success: stairs, 0
+2024-08-04 23:33:29 - root - DEBUG - _make_vLLM_API_call success: stairs, 0
+2024-08-04 23:33:34 - root - DEBUG - _make_vLLM_API_call success: stairs, 1
+2024-08-04 23:33:40 - root - DEBUG - _make_vLLM_API_call success: stairs, 1
+2024-08-04 23:33:45 - root - DEBUG - _make_vLLM_API_call success: stairs, 0
+2024-08-04 23:33:50 - root - DEBUG - _make_vLLM_API_call success: stairs, 1
+2024-08-04 23:33:50 - root - INFO - Exit decaptcha: stairs, temp/captcha.jpg, [False, False, False, False, False, True, True, False, True]
+2024-08-04 23:33:51 - root - INFO - CAPTCHA COMPLETED
+2024-08-04 23:34:04 - root - ERROR - Table not Found or other error: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:511:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2024-08-04 23:34:04 - root - INFO - FACULTY DEPT for A-WAN,IRUND I: No department found
+2024-08-04 23:34:04 - root - INFO - ---------WRITING RESULTS TO STATE FILE---------
+2024-08-04 23:34:04 - root - INFO - ---------GETTING FACULTY INFORMATION---------
+2024-08-04 23:34:07 - root - INFO - 
+FORM FILLED with AABERG DULANE T
+2024-08-04 23:34:08 - root - INFO - CAPTCHA iFrame identified. Extracting info ...
+2024-08-04 23:34:08 - root - INFO - CAPTCHA target: bridges
+2024-08-04 23:34:08 - root - INFO - CAPTCHA image source: https://www.google.com/recaptcha/api2/payload?p=06AFcWeA572FHbeJBK0N796WDP6h1prYRu9ENcdiCZZnF7op-rWv-w53gHARTqb8rFxEJpumI2jg30-_YiAmO0aQ-yEjKCkJoQ8dgWmPQx5pzxU60JFXE42DEBEu1_jSxrTwDhbdJdGbTjnm1mb9HboNDrL7arHFN5O_UHNwqPdFGFmWqdEXUnrguWk5Fxgeus7oC2_GT-euDU&k=6Lc-h1MUAAAAAMDEswtWjZq0byFXN4McoBPjOqAT
+2024-08-04 23:34:08 - root - INFO - Enter decaptcha: bridges, temp/captcha.jpg
+2024-08-04 23:34:08 - root - DEBUG - Images split and encoded: bridges, temp/captcha.jpg
+2024-08-04 23:34:16 - root - DEBUG - _make_vLLM_API_call success: bridges, 1
+2024-08-04 23:34:22 - root - DEBUG - _make_vLLM_API_call success: bridges, 0
+2024-08-04 23:34:28 - root - DEBUG - _make_vLLM_API_call success: bridges, 1
+2024-08-04 23:34:37 - root - DEBUG - _make_vLLM_API_call success: bridges, 0
+2024-08-04 23:34:45 - root - DEBUG - _make_vLLM_API_call success: bridges, 0
+2024-08-04 23:34:54 - root - DEBUG - _make_vLLM_API_call success: bridges, 1
+2024-08-04 23:35:05 - root - DEBUG - _make_vLLM_API_call success: bridges, 1
+2024-08-04 23:35:19 - root - DEBUG - _make_vLLM_API_call success: bridges, 0
+2024-08-04 23:35:31 - root - DEBUG - _make_vLLM_API_call success: bridges, 0
+2024-08-04 23:35:31 - root - INFO - Exit decaptcha: bridges, temp/captcha.jpg, [True, False, True, False, False, True, True, False, False]
+2024-08-04 23:35:32 - root - INFO - CAPTCHA COMPLETED
+2024-08-04 23:35:44 - root - ERROR - Table not Found or other error: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:511:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2024-08-04 23:35:44 - root - INFO - FACULTY DEPT for AABERG DULANE T: No department found
+2024-08-04 23:35:44 - root - INFO - ---------WRITING RESULTS TO STATE FILE---------
+2024-08-04 23:35:45 - root - INFO - ---------GETTING FACULTY INFORMATION---------
+2024-08-04 23:35:48 - root - INFO - 
+FORM FILLED with AAGESEN DAVID
+2024-08-04 23:35:49 - root - INFO - CAPTCHA iFrame identified. Extracting info ...
+2024-08-04 23:35:49 - root - INFO - CAPTCHA target: bicycles
+2024-08-04 23:35:49 - root - INFO - CAPTCHA image source: https://www.google.com/recaptcha/api2/payload?p=06AFcWeA5qGUGleesimsswpEyRoOaT3kiXJHzo-9yXlFyGfXvlnGCECDAEhVwXlNQibH9dPuq_y0kPGg-HP6uTnE1JRgVSoBTAV8usEAtPCsuohpJ0Rjn9H2MP5Di6AZGTwvT8gdGcDlbDhQ-WWtrPylXSjgN6K-R21OASa_p6JX6wZq6ly-FeKHoQa-SSJMX8TUcFnyc6qjRnJFZw0tUgLw1GGFPPoE3-vg&k=6Lc-h1MUAAAAAMDEswtWjZq0byFXN4McoBPjOqAT
+2024-08-04 23:35:49 - root - INFO - Enter decaptcha: bicycles, temp/captcha.jpg
+2024-08-04 23:35:49 - root - DEBUG - Images split and encoded: bicycles, temp/captcha.jpg
+2024-08-04 23:36:02 - root - DEBUG - _make_vLLM_API_call success: bicycles, 0
+2024-08-04 23:36:15 - root - DEBUG - _make_vLLM_API_call success: bicycles, 0
+2024-08-04 23:36:26 - root - DEBUG - _make_vLLM_API_call success: bicycles, 0
+2024-08-04 23:36:36 - root - DEBUG - _make_vLLM_API_call success: bicycles, 0
+2024-08-04 23:36:46 - root - DEBUG - _make_vLLM_API_call success: bicycles, 0
+2024-08-04 23:36:55 - root - DEBUG - _make_vLLM_API_call success: bicycles, 1
+2024-08-04 23:37:07 - root - DEBUG - _make_vLLM_API_call success: bicycles, 0
+2024-08-04 23:37:16 - root - DEBUG - _make_vLLM_API_call success: bicycles, 1
+2024-08-04 23:37:26 - root - DEBUG - _make_vLLM_API_call success: bicycles, 1
+2024-08-04 23:37:26 - root - INFO - Exit decaptcha: bicycles, temp/captcha.jpg, [False, False, False, False, False, True, False, True, True]
+2024-08-04 23:37:27 - root - INFO - CAPTCHA COMPLETED
+2024-08-04 23:37:41 - root - ERROR - Table not Found or other error: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:511:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2024-08-04 23:37:41 - root - INFO - FACULTY DEPT for AAGESEN DAVID: No department found
+2024-08-04 23:37:41 - root - INFO - ---------WRITING RESULTS TO STATE FILE---------
+2024-08-04 23:37:41 - root - INFO - ---------GETTING FACULTY INFORMATION---------
+2024-08-04 23:37:44 - root - INFO - 
+FORM FILLED with AALBERS KIMBERLEY K
+2024-08-04 23:37:56 - root - ERROR - Table not Found or other error: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:511:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2024-08-04 23:37:56 - root - INFO - FACULTY DEPT for AALBERS KIMBERLEY K: No department found
+2024-08-04 23:37:56 - root - INFO - ---------WRITING RESULTS TO STATE FILE---------
+2024-08-04 23:37:57 - root - INFO - ---------GETTING FACULTY INFORMATION---------
+2024-08-04 23:39:05 - root - INFO - PAGE LOADING
+2024-08-04 23:39:05 - root - INFO - ---------GETTING FACULTY INFORMATION---------
+2024-08-04 23:39:10 - root - INFO - 
+FORM FILLED with AALBERTS JOEL M
+2024-08-04 23:39:16 - root - ERROR - Table not Found or other error: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:511:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2024-08-04 23:39:16 - root - INFO - FACULTY DEPT for AALBERTS JOEL M: No department found
+2024-08-04 23:39:16 - root - INFO - ---------WRITING RESULTS TO STATE FILE---------
+2024-08-04 23:39:17 - root - INFO - ---------GETTING FACULTY INFORMATION---------
+2024-08-04 23:39:20 - root - INFO - 
+FORM FILLED with AALBERTS,AMY IVES
+2024-08-04 23:39:26 - root - ERROR - Table not Found or other error: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:511:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2024-08-04 23:39:26 - root - INFO - FACULTY DEPT for AALBERTS,AMY IVES: No department found
+2024-08-04 23:39:26 - root - INFO - ---------WRITING RESULTS TO STATE FILE---------
+2024-08-04 23:39:26 - root - INFO - ---------GETTING FACULTY INFORMATION---------
+2024-08-04 23:40:27 - root - INFO - PAGE LOADING
+2024-08-04 23:40:27 - root - INFO - ---------GETTING FACULTY INFORMATION---------
+2024-08-04 23:40:31 - root - INFO - 
+FORM FILLED with AALBERTS,AMY IVES
+2024-08-04 23:40:32 - root - INFO - CAPTCHA iFrame identified. Extracting info ...
+2024-08-04 23:40:32 - root - INFO - CAPTCHA target: boats
+2024-08-04 23:40:32 - root - INFO - CAPTCHA image source: https://www.google.com/recaptcha/api2/payload?p=06AFcWeA6tzlwOQHNJOB9CeK3Ha9GeN_cZKlmqVPe66KScadj_wfqVgwjlombY2TKYPjqhWj4bmDjDQpQwx8N1G5GTVEKPKMEyWyVv4tMVjfKA-oAg7GbZ-ipqIvGqsDkaioJ1UJ4U5ld8bezq9UCuNPJy18I8bLiukGmyr1L5LnEFsLGv-xsXWz56z3ywCWe0nREfknd8it6OHe-j4N0aOXwJB9OIbNoFAQ&k=6Lc-h1MUAAAAAMDEswtWjZq0byFXN4McoBPjOqAT
+2024-08-04 23:40:33 - root - INFO - Enter decaptcha: boats, temp/captcha.jpg
+2024-08-04 23:40:33 - root - DEBUG - Images split and encoded: boats, temp/captcha.jpg
+2024-08-04 23:40:42 - root - DEBUG - _make_vLLM_API_call success: boats, 0
+2024-08-04 23:40:47 - root - DEBUG - _make_vLLM_API_call success: boats, 1
+2024-08-04 23:40:53 - root - DEBUG - _make_vLLM_API_call success: boats, 0
+2024-08-04 23:40:58 - root - DEBUG - _make_vLLM_API_call success: boats, 1
+2024-08-04 23:41:03 - root - DEBUG - _make_vLLM_API_call success: boats, 1
+2024-08-04 23:41:09 - root - DEBUG - _make_vLLM_API_call success: boats, 0
+2024-08-04 23:41:15 - root - DEBUG - _make_vLLM_API_call success: boats, 0
+2024-08-04 23:41:20 - root - DEBUG - _make_vLLM_API_call success: boats, 0
+2024-08-04 23:41:25 - root - DEBUG - _make_vLLM_API_call success: boats, 0
+2024-08-04 23:41:25 - root - INFO - Exit decaptcha: boats, temp/captcha.jpg, [False, True, False, True, True, False, False, False, False]
+2024-08-04 23:41:26 - root - INFO - CAPTCHA COMPLETED
+2024-08-04 23:41:32 - root - ERROR - Table not Found or other error: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:511:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2024-08-04 23:41:32 - root - INFO - FACULTY DEPT for AALBERTS,AMY IVES: No department found
+2024-08-04 23:41:32 - root - INFO - ---------WRITING RESULTS TO STATE FILE---------
+2024-08-04 23:41:33 - root - INFO - ---------GETTING FACULTY INFORMATION---------
+2024-08-04 23:43:45 - root - INFO - PAGE LOADING
+2024-08-04 23:43:45 - root - INFO - ---------GETTING FACULTY INFORMATION---------
+2024-08-04 23:43:48 - root - INFO - 
+FORM FILLED with AALBERTS,JOEL MICHAEL
+2024-08-04 23:43:49 - root - INFO - CAPTCHA iFrame identified. Extracting info ...
+2024-08-04 23:43:49 - root - INFO - CAPTCHA target: bicycles
+2024-08-04 23:46:25 - root - INFO - PAGE LOADING
+2024-08-04 23:46:25 - root - INFO - ---------GETTING FACULTY INFORMATION---------
+2024-08-04 23:46:31 - root - INFO - 
+FORM FILLED with AALBERTS,JOEL MICHAEL
+2024-08-04 23:57:23 - root - INFO - PAGE LOADING
+2024-08-04 23:57:23 - root - INFO - ---------GETTING FACULTY INFORMATION FOR ABDEL-MALEK,KARIM---------
+2024-08-04 23:57:26 - root - INFO - 
+FORM FILLED with ABDEL-MALEK,KARIM
+2024-08-04 23:57:27 - root - INFO - CAPTCHA iFrame identified. Extracting info ...
+2024-08-04 23:57:27 - root - INFO - CAPTCHA target: bicycles
+2024-08-04 23:57:32 - root - ERROR - solve_captcha exception: Message: Failed to decode response from marionette
+
+2024-08-04 23:57:39 - root - INFO - PAGE LOADING
+2024-08-04 23:57:39 - root - INFO - ---------GETTING FACULTY INFORMATION FOR ABDEL-MALEK,KARIM---------
+2024-08-04 23:57:43 - root - INFO - 
+FORM FILLED with ABDEL-MALEK,KARIM
+2024-08-04 23:57:43 - root - INFO - CAPTCHA iFrame identified. Extracting info ...
+2024-08-04 23:57:43 - root - INFO - CAPTCHA target: traffic lights
+2024-08-04 23:57:46 - root - ERROR - solve_captcha exception: Message: Failed to decode response from marionette
+
+2024-08-04 23:57:52 - root - INFO - PAGE LOADING
+2024-08-04 23:57:52 - root - INFO - ---------GETTING FACULTY INFORMATION FOR ABDEL-MALEK,KARIM---------
+2024-08-04 23:57:57 - root - INFO - 
+FORM FILLED with ABDEL-MALEK,KARIM
+2024-08-04 23:57:57 - root - INFO - CAPTCHA iFrame identified. Extracting info ...
+2024-08-04 23:57:57 - root - INFO - CAPTCHA target: traffic lights
+2024-08-04 23:57:57 - root - INFO - CAPTCHA image source: https://www.google.com/recaptcha/api2/payload?p=06AFcWeA7a51P9KzjUoQou-WCLnSV9SsWXcUdjj5lkx25IgkTeskWxD0tQMpJ8KxIUKOEhRTer7Wl12QcULLearhWoI84PWnJ34OooYdt2kv0d9BAnvW_Zv4gkcvGZZ-9I0er9hPjzg-x09g70LSTwo_qxeaI4xPACrdpVcA2gvsAbZo8Nt8OIhJcwBtCH8tGITksQZ3Krh682vwAzrjmD_2vRrq6XSVuCRw&k=6Lc-h1MUAAAAAMDEswtWjZq0byFXN4McoBPjOqAT
+2024-08-04 23:57:57 - root - INFO - Enter decaptcha: traffic lights, temp/captcha.jpg
+2024-08-04 23:57:57 - root - DEBUG - Images split and encoded: traffic lights, temp/captcha.jpg
+2024-08-04 23:58:09 - root - DEBUG - _make_vLLM_API_call success: traffic lights, 1
+2024-08-04 23:58:14 - root - DEBUG - _make_vLLM_API_call success: traffic lights, 1
+2024-08-04 23:58:20 - root - DEBUG - _make_vLLM_API_call success: traffic lights, 1
+2024-08-04 23:58:25 - root - DEBUG - _make_vLLM_API_call success: traffic lights, 0
+2024-08-04 23:58:31 - root - DEBUG - _make_vLLM_API_call success: traffic lights, 1
+2024-08-04 23:58:36 - root - DEBUG - _make_vLLM_API_call success: traffic lights, 1
+2024-08-04 23:58:41 - root - DEBUG - _make_vLLM_API_call success: traffic lights, 0
+2024-08-04 23:58:47 - root - DEBUG - _make_vLLM_API_call success: traffic lights, 0
+2024-08-04 23:58:52 - root - DEBUG - _make_vLLM_API_call success: traffic lights, 0
+2024-08-04 23:58:52 - root - INFO - Exit decaptcha: traffic lights, temp/captcha.jpg, [True, True, True, False, True, True, False, False, False]
+2024-08-04 23:58:54 - root - INFO - CAPTCHA COMPLETED
+2024-08-04 23:59:08 - root - INFO - PAGE LOADING
+2024-08-04 23:59:08 - root - INFO - ---------GETTING FACULTY INFORMATION FOR ABDEL-MALEK,KARIM---------
+2024-08-04 23:59:10 - root - INFO - 
+FORM FILLED with ABDEL-MALEK,KARIM
+2024-08-04 23:59:11 - root - INFO - CAPTCHA iFrame identified. Extracting info ...
+2024-08-04 23:59:11 - root - INFO - CAPTCHA target: motorcycles
+2024-08-04 23:59:11 - root - INFO - CAPTCHA image source: https://www.google.com/recaptcha/api2/payload?p=06AFcWeA4zsx5WM0WdKPIgFQIb21DJTap9FsaxQAjLz8HnK1c0ERAlAL3ccn8wsl5ihdMkQUG219SlKpqiZnYMSu2QIUqsfmxzOgzGgUe4U-O7hgqzr16GwkRjIF5LpGBw_FCHyvq4Q4Xd2bXI04rOBqVTBHSkGSTDkUVjAhDkqx0WF1-OpMSxCSSk7Hy55xEdAwJ3tjMcGjd3TLz8Fl2KGVQdDleNNXAeHQ&k=6Lc-h1MUAAAAAMDEswtWjZq0byFXN4McoBPjOqAT
+2024-08-04 23:59:11 - root - INFO - Enter decaptcha: motorcycles, temp/captcha.jpg
+2024-08-04 23:59:11 - root - DEBUG - Images split and encoded: motorcycles, temp/captcha.jpg
+2024-08-04 23:59:18 - root - DEBUG - _make_vLLM_API_call success: motorcycles, 1
+2024-08-04 23:59:24 - root - DEBUG - _make_vLLM_API_call success: motorcycles, 1
+2024-08-04 23:59:29 - root - DEBUG - _make_vLLM_API_call success: motorcycles, 1
+2024-08-04 23:59:34 - root - DEBUG - _make_vLLM_API_call success: motorcycles, 1
+2024-08-04 23:59:40 - root - DEBUG - _make_vLLM_API_call success: motorcycles, 0
+2024-08-04 23:59:45 - root - DEBUG - _make_vLLM_API_call success: motorcycles, 0
+2024-08-04 23:59:51 - root - DEBUG - _make_vLLM_API_call success: motorcycles, 0
+2024-08-04 23:59:57 - root - DEBUG - _make_vLLM_API_call success: motorcycles, 0
+2024-08-05 00:00:02 - root - DEBUG - _make_vLLM_API_call success: motorcycles, 0
+2024-08-05 00:00:02 - root - INFO - Exit decaptcha: motorcycles, temp/captcha.jpg, [True, True, True, True, False, False, False, False, False]
+2024-08-05 00:00:03 - root - INFO - CAPTCHA COMPLETED
+2024-08-05 00:00:51 - root - INFO - PAGE LOADING
+2024-08-05 00:00:51 - root - INFO - ---------GETTING FACULTY INFORMATION FOR ABDEL-MALEK,KARIM---------
+2024-08-05 00:00:55 - root - INFO - 
+FORM FILLED with ABDEL-MALEK,KARIM
+2024-08-05 00:00:56 - root - INFO - CAPTCHA iFrame identified. Extracting info ...
+2024-08-05 00:00:56 - root - INFO - CAPTCHA target: motorcycles
+2024-08-05 00:05:01 - root - INFO - PAGE LOADING
+2024-08-05 00:05:01 - root - INFO - ---------GETTING FACULTY INFORMATION FOR ABDEL-MALEK,KARIM---------
+2024-08-05 00:05:04 - root - INFO - 
+FORM FILLED with ABDEL-MALEK,KARIM
+2024-08-05 00:05:06 - root - INFO - CAPTCHA iFrame identified. Extracting info ...
+2024-08-05 00:05:06 - root - INFO - CAPTCHA target: motorcycles
+2024-08-05 00:05:18 - root - INFO - PAGE LOADING
+2024-08-05 00:05:18 - root - INFO - ---------GETTING FACULTY INFORMATION FOR ABDEL-MALEK,KARIM---------
+2024-08-05 00:05:23 - root - INFO - 
+FORM FILLED with ABDEL-MALEK,KARIM
+2024-08-05 00:05:24 - root - INFO - CAPTCHA iFrame identified. Extracting info ...
+2024-08-05 00:05:24 - root - INFO - CAPTCHA target: bicycles
+2024-08-05 00:05:28 - root - ERROR - solve_captcha exception: Message: Browsing context has been discarded
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+NoSuchWindowError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:679:5
+assert.that/<@chrome://remote/content/shared/webdriver/Assert.sys.mjs:485:13
+assert.open@chrome://remote/content/shared/webdriver/Assert.sys.mjs:147:4
+GeckoDriver.prototype.findElement@chrome://remote/content/marionette/driver.sys.mjs:1485:15
+despatch@chrome://remote/content/marionette/server.sys.mjs:318:40
+execute@chrome://remote/content/marionette/server.sys.mjs:289:16
+onPacket/<@chrome://remote/content/marionette/server.sys.mjs:262:20
+onPacket@chrome://remote/content/marionette/server.sys.mjs:263:9
+_onJSONObjectReady/<@chrome://remote/content/marionette/transport.sys.mjs:494:20
+
+2024-08-05 00:05:28 - root - INFO - CAPTCHA COMPLETED
+2024-08-05 00:05:31 - root - INFO - Name Abdel-Malek, Karim
+2024-08-05 00:05:31 - root - INFO - Send E-Mail To karim-abdel-malek@uiowa.edu
+2024-08-05 00:05:31 - root - INFO - E-Mail Routing Address amalek@iowa.uiowa.edu
+2024-08-05 00:05:31 - root - INFO - HawkID amalek
+2024-08-05 00:05:31 - root - INFO - University Classification Professor
+2024-08-05 00:05:31 - root - INFO - Job Code FT11
+2024-08-05 00:05:31 - root - INFO - Campus Mail Address
+UI TECHNOLOGY INSTITUTE
+ERF
+2024-08-05 00:05:31 - root - INFO - Person Type Faculty/Staff
+2024-08-05 00:05:31 - root - ERROR - Not enough rows in the table.
+2024-08-05 00:05:31 - root - INFO - FACULTY DEPT for ABDEL-MALEK,KARIM: special condition
+2024-08-05 00:05:31 - root - INFO - ---------WRITING RESULTS TO STATE FILE---------
+2024-08-05 00:05:32 - root - INFO - ---------GETTING FACULTY INFORMATION FOR ABOUL HOSN,MAEN---------

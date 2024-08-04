@@ -16,6 +16,7 @@ import concurrent.futures
 import requests
 from PIL import Image
 from io import BytesIO
+import logging
 
 def assert_equal(tc_name: str, arr1: list[bool], arr2: list[bool]):
     if _is_equal(arr1, arr2): return
@@ -56,38 +57,71 @@ def make_connection(URL, elementName, isHeadless=False):
         _wait_for_elements(driver, elementName)
     return driver
 
-def fill_form(URL, name):
-    """This function fills the form that scrapes the department 
-    information for a given professor.
-    :param URL: The URL of the website being scraped
-    :param name: The name of the professor
-    :return: driver
-    """
-    try:
-        driver = make_connection(URL, None)
-        time.sleep(_generate_random(0.5, 3.5))
+# def fill_form(URL, name):
+#     """This function fills the form that scrapes the department 
+#     information for a given professor.
+#     :param URL: The URL of the website being scraped
+#     :param name: The name of the professor
+#     :return: driver
+#     """
+#     try:
+#         driver = make_connection(URL, None)
+#         time.sleep(_generate_random(0.5, 3.5))
 
+#         name_field = driver.find_element(By.NAME, 'SearchEntry')
+#         name_field.send_keys(name)
+#         time.sleep(_generate_random(0.5, 1.8))
+#         submit_button = driver.find_element(By.CSS_SELECTOR, 'button[type="submit"]')
+#         submit_button.click()
+#     except TimeoutException as e:
+#         print("TimeoutException", e)
+#     except NoSuchElementException as e:
+#         print("NoSuchElementException", e)
+#     return driver
+
+
+def fill_form(driver: WebDriver, name: str):
+    try:
+        time.sleep(_generate_random(0.5, 3.5))
         name_field = driver.find_element(By.NAME, 'SearchEntry')
         name_field.send_keys(name)
         time.sleep(_generate_random(0.5, 1.8))
         submit_button = driver.find_element(By.CSS_SELECTOR, 'button[type="submit"]')
         submit_button.click()
+        logging.info(f"\nFORM FILLED with {name}")
     except TimeoutException as e:
         print("TimeoutException", e)
     except NoSuchElementException as e:
         print("NoSuchElementException", e)
-    return driver
+    return driver 
 
-def get_faculty_for_prof(driver: WebDriver):
+def get_faculty_department(driver: WebDriver, name):
+    name_field = driver.find_element(By.NAME, 'SearchEntry')
+    name_field.clear()
+    name_field.send_keys(name)
+    time.sleep(_generate_random(0.5, 1.8))  # Adding a pause to simulate human interaction
+    submit_button = driver.find_element(By.CSS_SELECTOR, 'button[type="submit"]')
+    submit_button.click()
+    time.sleep(_generate_random(0.5, 1.8))
     try:
-        table_element = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.CSS_SELECTOR, ""))
+        
+        table = WebDriverWait(driver, 3).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, '.table'))
         )
+        tr_tags = table.find_elements(By.TAG_NAME, 'tr')
+        for tr in tr_tags:
+            logging.info(tr.text)
+        if len(tr_tags) > 9:
+            dept = tr_tags[8].text.strip('\n').split('\n')[1].strip()
+            logging.info(dept)
+            return dept
+        else:
+            logging.error(f"Not enough rows in the table.")
+            return "special condition"
     except Exception as e:
-        print(f"Error: Could not find table elements. {e}")
-
-def re_fill_form(driver: WebDriver, name: str):
-    pass
+        logging.error(f"Table not Found or other error: {e}")
+        return "No department found"
+    
 
 def scrape_faculty_information_for_prof(name):
     """
