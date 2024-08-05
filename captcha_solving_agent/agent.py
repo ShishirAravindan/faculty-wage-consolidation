@@ -15,22 +15,22 @@ import time
 config = {
     "iframe": "/html/body/div/div[2]/iframe",
     "captcha_instructions": "strong:nth-child(1)",
-    "captcha_image_src": "img.rc-image-tile-33",
+    "captcha_image_src": "img.rc-image-tile",
     "image_grid": "div.rc-image-tile-wrapper",
     "verify_button": "#recaptcha-verify-button" 
 }
 
 def captcha_workflow(driver: WebDriver):
-    payload, driver = _identify_and_extract_captcha_form(driver)
+    grid_size, payload, driver = _identify_and_extract_captcha_form(driver)
     if payload:
         target_class, images = payload[0], payload[1]
         img_path = utils._download_image_locally(images)
-        _solve_captcha(driver, target_class, img_path)
+        _solve_captcha(driver, target_class, img_path, grid_size)
     return driver
 
 
-def _solve_captcha(driver: WebDriver, target_class: str, img_path: str):
-    captcha_predictions = decaptcha(target_class, img_path)
+def _solve_captcha(driver: WebDriver, target_class: str, img_path: str, grid_size: int):
+    captcha_predictions = decaptcha(target_class, img_path, grid_size)
     _click_images(driver, captcha_predictions)
     _complete_form(driver)
     driver.switch_to.default_content()
@@ -40,20 +40,20 @@ def _identify_and_extract_captcha_form(driver: WebDriver):
         captcha_iframe = WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.XPATH, config["iframe"]))
         )
-        payload, driver = _extract_captcha_details(driver, captcha_iframe)
-        return payload, driver
+        grid_size, payload, driver = _extract_captcha_details(driver, captcha_iframe)
+        return grid_size, payload, driver
     except NoSuchElementException as e:
         logging.error(f"solve_captcha exception: {e.msg}")
     except TimeoutException as e:
         logging.info(f"No CAPTCHA found on page {e.msg}")
-    return None, driver
+    return None, None, driver
 
 def _extract_captcha_details(driver: WebDriver, captcha_iframe: WebElement):
     try:
         driver.switch_to.frame(captcha_iframe)
         target_class, driver = _get_target_class(driver)
-        images_src, driver = _get_images(driver)
-        return [target_class, images_src], driver
+        grid_size, images_src, driver = _get_images(driver)
+        return grid_size, [target_class, images_src], driver
     except Exception as e:
         logging.error(f"solve_captcha exception: {e}")
         driver.switch_to.default_content()
@@ -73,17 +73,31 @@ def _get_target_class(driver):
 
 def _get_images(driver):
     try:
-        images_table_element = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.CSS_SELECTOR, config["captcha_image_src"]))
+        images_table_element = WebDriverWait(driver, 5).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, 
+                                            f'{config["captcha_image_src"]}-33'))
         )
         images_src = images_table_element.get_attribute("src")
-        logging.info(f"CAPTCHA image source: {images_src}")
-        return images_src, driver
+        logging.info(f"3x3 CAPTCHA image grid identified")
+        return 3, images_src, driver
     except NoSuchElementException as e:
         logging.error(f"[NoSuchElementException] Error Processing CAPTCHA form's images: {e}")
+        logging.info(f"4x4 CAPTCHA image grid identified. [Need to process]")
     except TimeoutException as e:
-        logging.error(f"[TimeoutException] Error Processing CAPTCHA form's images: {e}")
-    return '', driver
+        logging.debug(f"No 3x3 CAPTCHA image grid identified. {e}")
+        try:
+            images_table_element = WebDriverWait(driver, 5).until(
+                EC.presence_of_element_located((By.CSS_SELECTOR, 
+                                                f'{config["captcha_image_src"]}-44'))
+            )
+            images_src = images_table_element.get_attribute("src")
+            logging.info(f"4x4 CAPTCHA image grid identified")
+            return 4, images_src, driver
+        except NoSuchElementException as e:
+            logging.error(f"[NoSuchElementException] Error Processing CAPTCHA form's images: {e}")
+        except TimeoutException as e:
+            logging.debug(f"No 4x4 CAPTCHA image grid identified. {e}")
+    return None, '', driver
 
 def _click_images(driver: WebDriver, preds: list[int]) -> WebDriver:
     """Given the driver and the results (i.e. predictions from the vLLM) click
@@ -125,7 +139,8 @@ def test_main():
     URL = "https://iam.uiowa.edu/whitepages/search"
     name = "THOMAS S GRUCA"
     logging.info("PAGE LOADING")
-    driver = utils.fill_form(URL, name)
+    driver = utils.make_connection(URL, None)
+    driver = utils.fill_form(driver, name)
     logging.info("FORM FILLED")
     captcha_workflow(driver)
     logging.info("CAPTCHA reached")

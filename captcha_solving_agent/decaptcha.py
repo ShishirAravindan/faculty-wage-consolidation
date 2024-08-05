@@ -15,7 +15,7 @@ config = {
     "api_timeout": 200
 }
 
-def decaptcha(target: str, image_path: str) -> list[bool]:
+def decaptcha(target: str, image_path: str, grid_size: int) -> list[bool]:
     """
     Process a list of images using the vLLM API for classification.
     Args:
@@ -29,7 +29,7 @@ def decaptcha(target: str, image_path: str) -> list[bool]:
     """
     logging.info(f"Enter decaptcha: {target}, {image_path}")
 
-    images = _split_and_encode_image(image_path)
+    images = _split_and_encode_image(image_path, grid_size)
     logging.debug(f"Images split and encoded: {target}, {image_path}")
 
     preds = _process_images(target, images)
@@ -37,20 +37,20 @@ def decaptcha(target: str, image_path: str) -> list[bool]:
     return preds
 
 
-def _split_and_encode_image(image_path: str) -> list[str]:
+def _split_and_encode_image(image_path: str, grid_size: int) -> list[str]:
     """
     Split the image into 9 equal parts and return base64 
     encoded strings for each part.
     """
     with Image.open(image_path) as img:
         width, height = img.size
-        square_size = min(width, height) // 3
+        square_size = min(width, height) // grid_size
         
         # List to store base64 encoded image parts
         encoded_parts = []
         
-        for i in range(3):
-            for j in range(3):
+        for i in range(grid_size):
+            for j in range(grid_size):
                 # Coordinates for cropping
                 left = j * square_size
                 top = i * square_size
