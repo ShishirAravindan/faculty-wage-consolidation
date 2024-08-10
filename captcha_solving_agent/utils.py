@@ -104,7 +104,12 @@ def get_faculty_department(driver: WebDriver, name):
     submit_button.click()
     time.sleep(_generate_random(0.5, 1.8))
     try:
-        
+        no_results_div = driver.find_element(By.XPATH, '//div[@class="alert alert-danger validation-results-alert '
+                                                       'text-center"]')
+        if no_results_div:
+            logging.error(f"No results found for {name}")
+            return "No department found"
+
         table = WebDriverWait(driver, 3).until(
             EC.presence_of_element_located((By.CSS_SELECTOR, '.table'))
         )
