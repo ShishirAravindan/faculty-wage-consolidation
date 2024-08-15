@@ -17,6 +17,8 @@ import requests
 from PIL import Image
 from io import BytesIO
 import logging
+import uuid
+from typing import Tuple
 
 def assert_equal(tc_name: str, arr1: list[bool], arr2: list[bool]):
     if _is_equal(arr1, arr2): return
@@ -32,8 +34,9 @@ def _download_image_locally(url) -> str:
     response = requests.get(url)
     if response.status_code == 200:
         image = Image.open(BytesIO(response.content))
-        image.save("temp/captcha.jpg")
-    return "temp/captcha.jpg"
+        fileName = f"temp/captcha_{uuid.uuid4().hex}.jpg"
+        image.save(fileName)
+    return fileName
 
 def _generate_random(x, y):
     return random.uniform(x, y)
@@ -84,6 +87,7 @@ def fill_form(driver: WebDriver, name: str):
     try:
         time.sleep(_generate_random(0.5, 3.5))
         name_field = driver.find_element(By.NAME, 'SearchEntry')
+        name_field.clear()
         name_field.send_keys(name)
         time.sleep(_generate_random(0.5, 1.8))
         submit_button = driver.find_element(By.CSS_SELECTOR, 'button[type="submit"]')
@@ -95,7 +99,7 @@ def fill_form(driver: WebDriver, name: str):
         print("NoSuchElementException", e)
     return driver 
 
-def get_faculty_department(driver: WebDriver, name):
+def get_faculty_department(driver: WebDriver, name: str) -> Tuple[WebDriver, str]:
     name_field = driver.find_element(By.NAME, 'SearchEntry')
     name_field.clear()
     name_field.send_keys(name)
@@ -104,11 +108,11 @@ def get_faculty_department(driver: WebDriver, name):
     submit_button.click()
     time.sleep(_generate_random(0.5, 1.8))
     try:
-        no_results_div = driver.find_element(By.XPATH, '//div[@class="alert alert-danger validation-results-alert '
-                                                       'text-center"]')
-        if no_results_div:
-            logging.error(f"No results found for {name}")
-            return "No department found"
+        # no_results_div = driver.find_element(By.XPATH, '//div[@class="alert alert-danger validation-results-alert '
+        #                                                'text-center"]')
+        # if no_results_div:
+        #     logging.error(f"No results found for {name}")
+        #     return "No department found"
         
 
         table = WebDriverWait(driver, 3).until(
@@ -117,16 +121,16 @@ def get_faculty_department(driver: WebDriver, name):
         tr_tags = table.find_elements(By.TAG_NAME, 'tr')
         for tr in tr_tags:
             logging.info(tr.text)
-        if len(tr_tags) > 9:
-            dept = tr_tags[8].text.strip('\n').split('\n')[1].strip()
-            logging.info(dept)
-            return dept
+            if tr.text.startswith('Campus Mail Address'):
+                dept = tr.text.strip('\n').split('\n')[1].strip()
+                logging.info(dept)
+                return driver, dept
         else:
             logging.error(f"Not enough rows in the table.")
-            return "special condition"
+            return driver, "special condition"
     except Exception as e:
         logging.error(f"Table not Found or other error: {e}")
-        return "No department found"
+        return driver, "No department found"
     
 # TODO: Remove 
 def scrape_faculty_information_for_prof(name):

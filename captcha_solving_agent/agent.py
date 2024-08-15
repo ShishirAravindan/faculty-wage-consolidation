@@ -84,7 +84,7 @@ def _get_images(driver):
         logging.error(f"[NoSuchElementException] Error Processing CAPTCHA form's images: {e}")
         logging.info(f"4x4 CAPTCHA image grid identified. [Need to process]")
     except TimeoutException as e:
-        logging.debug(f"No 3x3 CAPTCHA image grid identified. {e}")
+        logging.debug(f"No 3x3 CAPTCHA image grid identified.")
         try:
             images_table_element = WebDriverWait(driver, 5).until(
                 EC.presence_of_element_located((By.CSS_SELECTOR, 
