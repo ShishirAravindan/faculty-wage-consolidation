@@ -122,7 +122,7 @@ def get_faculty_department(driver: WebDriver, name):
         logging.error(f"Table not Found or other error: {e}")
         return "No department found"
     
-
+# TODO: Remove 
 def scrape_faculty_information_for_prof(name):
     """
     This function scrapes the department information for a given professor.
