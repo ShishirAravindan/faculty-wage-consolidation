@@ -14,7 +14,7 @@ import json
 import time
 import concurrent.futures
 import requests
-from PIL import Image
+#from PIL import Image
 from io import BytesIO
 import logging
 import uuid
@@ -100,9 +100,22 @@ def fill_form(driver: WebDriver, name: str):
     return driver 
 
 def get_faculty_department(driver: WebDriver, name: str) -> Tuple[WebDriver, str]:
+    last_name, first_middle = name.split(',')
+
+# Split the first and middle names
+    first_middle_split = first_middle.split()
+
+# Check if there is a middle name
+    if len(first_middle_split) == 2:
+        first_name, middle_name = first_middle_split
+        shortened_name = f"{last_name},{first_name} {middle_name[0]}."
+    else:
+        first_name = first_middle_split[0]
+        shortened_name = f"{last_name},{first_name}"
+    logging.info(f"The name being sent is {shortened_name}")
     name_field = driver.find_element(By.NAME, 'SearchEntry')
     name_field.clear()
-    name_field.send_keys(name)
+    name_field.send_keys(shortened_name)
     time.sleep(_generate_random(0.5, 1.8))  # Adding a pause to simulate human interaction
     submit_button = driver.find_element(By.CSS_SELECTOR, 'button[type="submit"]')
     submit_button.click()
@@ -120,7 +133,6 @@ def get_faculty_department(driver: WebDriver, name: str) -> Tuple[WebDriver, str
         )
         tr_tags = table.find_elements(By.TAG_NAME, 'tr')
         for tr in tr_tags:
-            logging.info(tr.text)
             if tr.text.startswith('Campus Mail Address'):
                 dept = tr.text.strip('\n').split('\n')[1].strip()
                 logging.info(dept)
