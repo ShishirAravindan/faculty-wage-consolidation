@@ -5,7 +5,7 @@ import requests
 import logging
 import logging.config
 import utils
-#from PIL import Image
+from PIL import Image
 import io
 
 config = {
