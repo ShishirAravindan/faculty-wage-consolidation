@@ -1,0 +1,10 @@
+{
+    "base_url": "https://dwllc.uiowa.edu/people",
+    "page_count": 1,
+    "aggregate_field": "Humanities", 
+    "department_info": "Foreign Languages, Literatures, and Linguistics",
+    "faculty_selector": ".views-row",
+    "name_selector": ".headline__heading",
+    "rank_selector": ".field--name-field-person-position .field__item",
+    "outfileName": "HUM_dwllc_faculty.csv"
+}

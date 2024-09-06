@@ -1,0 +1,10 @@
+{
+    "base_url": "https://pharmacy.uiowa.edu/people/",
+    "page_count": 10,
+    "aggregate_field": "Health", 
+    "department_info": "Pharmacy",
+    "faculty_selector": ".flex .flex-col .space-y-6",
+    "name_selector": "h2.text-[24px].font-bold.font-serif a",
+    "rank_selector": "h3.text-[20.8px].font-serif.font-medium.text-ui-gray-cool",
+    "outfileName": "HEAL_pharmacy.csv"
+}

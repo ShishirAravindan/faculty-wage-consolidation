@@ -1,0 +1,10 @@
+{
+    "base_url": "https://law.uiowa.edu/faculty-and-scholarship/meet-our-faculty",
+    "page_count": 2,
+    "aggregate_field": "Law", 
+    "department_info": "law",
+    "faculty_selector": ".views-row",
+    "name_selector": ".headline__heading",
+    "rank_selector": ".field--name-field-person-position .field__item",
+    "outfileName": "LAW_law_faculty.csv"
+}
