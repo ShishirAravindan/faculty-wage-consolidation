@@ -1,0 +1,10 @@
+{
+    "base_url": "https://www.public-health.uiowa.edu/epi-faculty-list/",
+    "page_count": 1,
+    "aggregate_field": "Life Sciences", 
+    "department_info": "Epidemiology",
+    "faculty_selector": "table.directory tbody tr",
+    "name_selector": "td:nth-child(1) a",
+    "rank_selector": "td:nth-child(2)",
+    "outfileName": "LISC_epi.csv"
+}
