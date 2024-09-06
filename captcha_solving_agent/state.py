@@ -101,7 +101,14 @@ def suppressMiddleName(name):
     else:
         # Return the name as is if it doesn't fit expected patterns
         return name
-
+    
+def suppressLastName(name):
+    name_parts = name.split(" ")
+    # Check if there are at least two parts to the name
+    if len(name_parts) > 1 and name_parts[1] != "":
+        name = name_parts[0] + " " + name_parts[1][0]
+    
+    return name
     
 def update_state_file(state_file_path, new_data):
     with open(state_file_path, 'r') as json_file:
@@ -122,12 +129,15 @@ def update_state_file(state_file_path, new_data):
             new_data_copy.pop(getFirstAndLastNameOnly(entry['Name']), None)
             counter += 1
         elif suppressMiddleName(entry['Name']) in new_data:
-            print(f"SUPPRESS MIDDLE NAME: {entry['Name']} to {suppressMiddleName(entry['Name'])}")
+            #print(f"SUPPRESS MIDDLE NAME: {entry['Name']} to {suppressMiddleName(entry['Name'])}")
             entry['Department'] = new_data[suppressMiddleName(entry['Name'])]
             new_data_copy.pop(suppressMiddleName(entry['Name']), None)
             counter += 1
+        elif suppressLastName(entry['Name']) in new_data:
+            entry['Department'] = new_data[suppressLastName(entry['Name'])]
+            new_data_copy.pop(suppressLastName(entry['Name']), None)
+            counter += 1
     for name, department in new_data_copy.items():
-        
         print(f"Name:  {name} was not found in the state file")
     print(f"Updated {counter} entries in the state file")
 
@@ -162,7 +172,7 @@ def checkStateStatus(state_file):
 # chunk = get_fresh_chunk('data/2_salariesUoIstate_2023.json', 5)
 # print(chunk)
 if __name__ == '__main__':
-    # excel_file_path = '../../public-healthIowa.xlsx'
+    # excel_file_path = '../../dentistryIowa.xlsx'
     # df = pd.read_excel(excel_file_path)
     # print(len(df['Name'].tolist()))
     # df['Name'] = df['Name'].apply(normalize_name)
@@ -175,3 +185,4 @@ if __name__ == '__main__':
     # update_state_file(state_file_path, new_data)
 
     checkStateStatus(state_file_path)
+    print(omit_last_letter("SUKALSKI,JENNIFER M"))
