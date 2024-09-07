@@ -1,8 +1,8 @@
 {
     "base_url": "https://chem.uiowa.edu/people",
     "page_count": 3,
-    "aggregate_field": "Chemistry", 
-    "department_info": "Life Sciences",
+    "aggregate_field": "Life Sciences", 
+    "department_info": "Chemistry",
     "outfileName": "chemistry-faculty.csv",
     "faculty_selector": ".views-row",
     "name_selector": ".headline__heading",
