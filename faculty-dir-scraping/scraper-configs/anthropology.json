@@ -1,0 +1,10 @@
+{
+    "base_url": "https://anthropology.uiowa.edu/people",
+    "page_count": 1,
+    "aggregate_field": "Anthropology", 
+    "department_info": "Social Sciences",
+    "outfileName": "anthropology-faculty.csv",
+    "faculty_selector": ".card__body",
+    "name_selector": ".headline",
+    "rank_selector": ".field--name-field-person-position .field__item"
+}

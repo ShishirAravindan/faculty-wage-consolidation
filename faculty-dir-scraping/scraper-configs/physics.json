@@ -1,0 +1,10 @@
+{
+    "base_url": "https://physics.uiowa.edu/people/faculty",
+    "page_count": 1,
+    "aggregate_field": "Physics", 
+    "department_info": "Physics",
+    "faculty_selector": ".views-row",
+    "name_selector": ".headline__heading",
+    "rank_selector": ".field--name-field-person-position .field__item",
+    "outfileName": "physics-faculty.csv"
+}

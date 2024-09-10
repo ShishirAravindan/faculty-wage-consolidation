@@ -6,5 +6,5 @@
     "faculty_selector": ".views-row",
     "name_selector": ".headline__heading",
     "rank_selector": ".field--name-field-person-position .field__item",
-    "outfileName": "LAW_law_faculty.csv"
+    "outfileName": "bio.csv"
 }

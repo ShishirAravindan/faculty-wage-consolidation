@@ -1,0 +1,10 @@
+{
+    "base_url": "https://biology.uiowa.edu/people",
+    "page_count": 7,
+    "department_info": "Biology",
+    "aggregate_field": "Life Sciences", 
+    "outfileName": "biology-faculty.csv",
+    "faculty_selector": ".views-row",
+    "name_selector": ".headline__heading",
+    "rank_selector": ".field--name-field-person-position .field__item"
+}
