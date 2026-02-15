@@ -1,23 +1,19 @@
 import time
+import json
 import requests
-import mechanize
-from bs4 import BeautifulSoup
-import os
-import tabula
 import pandas as pd
-import io
-import time
+from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.firefox.options import Options
-from selenium.common.exceptions import TimeoutException
-from selenium.webdriver.support.ui import Select
-from selenium.webdriver.safari.webdriver import WebDriver as SafariDriver
-from selenium.common.exceptions import StaleElementReferenceException, NoSuchElementException
-import json
-import scraperutils
+from selenium.common.exceptions import (
+    TimeoutException,
+    StaleElementReferenceException,
+    NoSuchElementException,
+)
+from utils import normalize_name
 
 '''
 This scraper is used for tippie college of business
@@ -161,20 +157,12 @@ def get_engineering_department():
                     dept = split_1_string.split(' ')[1].strip()
                     #print(name, ' ', dept)
                     name_dept_map[name] = dept
-                    
-                #print(inner_div.text.split('\n')[0].split(',')[1].strip())
-               
         driver.quit()
         df = pd.DataFrame(list(name_dept_map.items()), columns=['Name', 'Department'])
         df.to_excel('engineeringIowa.xlsx', index=False)
-                
-        
-        
+
     except Exception as e:
         print("CANT SCRAPE")
         print(e)
         driver.quit()
-    
 
-                    
-                
